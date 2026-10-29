@@ -45,7 +45,7 @@ public class chronicTicket extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(204, 153, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 99, 102));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/cliniqueue/smallerpanda.png"))); // NOI18N
 
@@ -62,7 +62,7 @@ public class chronicTicket extends javax.swing.JFrame {
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel5.setText("Chronic Collection");
+        jLabel5.setText("Chronic collection");
 
         jLabel6.setText("Ticket queue number");
 
@@ -72,7 +72,7 @@ public class chronicTicket extends javax.swing.JFrame {
         jLabel8.setText("Room number");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel9.setText("1");
+        jLabel9.setText("6");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel10.setText("File Number: A1011");
@@ -106,7 +106,7 @@ public class chronicTicket extends javax.swing.JFrame {
                         .addGap(65, 65, 65))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel5)
-                        .addGap(110, 110, 110))))
+                        .addGap(103, 103, 103))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
