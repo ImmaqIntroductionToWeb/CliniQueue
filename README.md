@@ -3,7 +3,7 @@
 An offline queue system for rural clinics.
 
 ## Demo
-Demo video coming soon.
+[Watch the demo video] (https://youtu.be/t-7lXjQ1Lzs)
 
 ## The problem
 Many rural clinics have long, unstructured queues and no reliable
