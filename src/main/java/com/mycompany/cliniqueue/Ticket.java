@@ -19,6 +19,11 @@ public class Ticket extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
     }
+    public Ticket(String ticket, int room) {
+    this();   // builds the screen as before
+    ticketNumber.setText(ticket);
+    roomNumber.setText(String.valueOf(room));
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -37,9 +42,9 @@ public class Ticket extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        ticketNumber = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        roomNumber = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -69,13 +74,13 @@ public class Ticket extends javax.swing.JFrame {
 
         jLabel6.setText("Ticket queue number");
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel7.setText("G035");
+        ticketNumber.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        ticketNumber.setText("G035");
 
         jLabel8.setText("Room number");
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel9.setText("4");
+        roomNumber.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        roomNumber.setText("4");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel10.setText("General Consultation");
@@ -105,7 +110,7 @@ public class Ticket extends javax.swing.JFrame {
                                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                                         .addGap(6, 6, 6)
                                                         .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addComponent(jLabel7))))))
+                                                    .addComponent(ticketNumber))))))
                                 .addGap(6, 6, 6)))
                         .addGap(118, 118, 118))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
@@ -113,7 +118,7 @@ public class Ticket extends javax.swing.JFrame {
                         .addGap(65, 65, 65))))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(181, 181, 181)
-                .addComponent(jLabel9)
+                .addComponent(roomNumber)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -124,11 +129,11 @@ public class Ticket extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(ticketNumber)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel9)
+                .addComponent(roomNumber)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -238,11 +243,11 @@ public class Ticket extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel roomNumber;
+    private javax.swing.JLabel ticketNumber;
     // End of variables declaration//GEN-END:variables
 }

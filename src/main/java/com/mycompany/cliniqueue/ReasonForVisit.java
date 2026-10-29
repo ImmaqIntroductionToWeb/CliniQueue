@@ -19,7 +19,16 @@ public class ReasonForVisit extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
     }
+       private String name;
+private String surname;
+private String idNumber;
 
+public ReasonForVisit(String name, String surname, String idNumber) {
+    this();   // runs the normal constructor first
+    this.name = name;
+    this.surname = surname;
+    this.idNumber = idNumber;
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -225,7 +234,9 @@ public class ReasonForVisit extends javax.swing.JFrame {
 
     private void GeneralillnessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GeneralillnessActionPerformed
         // TODO add your handling code here:
-        Ticket tickets = new Ticket();
+        String ticketNumber = Database.nextTicket("G");
+        Database.saveTicket(name, surname, idNumber, "General illness", ticketNumber, 4);
+        Ticket tickets = new Ticket(ticketNumber, 4);
         tickets.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_GeneralillnessActionPerformed

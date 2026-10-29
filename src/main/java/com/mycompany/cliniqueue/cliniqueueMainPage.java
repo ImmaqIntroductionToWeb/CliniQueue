@@ -18,6 +18,7 @@ public class cliniqueueMainPage extends javax.swing.JFrame {
     public cliniqueueMainPage() {
         initComponents();
         setLocationRelativeTo(null);
+        Database.createTables();
     }
 
     /**

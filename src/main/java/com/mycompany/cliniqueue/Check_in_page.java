@@ -231,7 +231,7 @@ public class Check_in_page extends javax.swing.JFrame {
         //}
             
         else{
-            ReasonForVisit reason = new ReasonForVisit();
+            ReasonForVisit reason = new ReasonForVisit(name, surname, idNum);
             reason.setVisible(true);
             this.dispose();
         }
